@@ -1,6 +1,6 @@
 Basic RP2040 experiment.
 
-![image](temp.jpg)
+![image](m1.png)
 
 Untested as of Aug 7, 2023
 
