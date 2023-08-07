@@ -1,0 +1,9 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "4-edge-conn")(type "KiCad")(uri "${KIPRJMOD}/libraries/2023-07-19_20-38-50.kicad_sym")(options "")(descr ""))
+  (lib (name "max98306")(type "KiCad")(uri "${KIPRJMOD}/libraries/max98306etd+t/2023-07-20_01-11-31.kicad_sym")(options "")(descr ""))
+  (lib (name "max98357")(type "KiCad")(uri "${KIPRJMOD}/libraries/max98357aete+t/2023-07-20_13-33-48.kicad_sym")(options "")(descr ""))
+  (lib (name "esd122dmxr")(type "KiCad")(uri "${KIPRJMOD}/libraries/esd122dmxr/2023-07-28_20-11-14.kicad_sym")(options "")(descr ""))
+  (lib (name "d5v0l2b3so-7")(type "KiCad")(uri "${KIPRJMOD}/libraries/d5v0l2b3so-7/2023-07-29_00-56-41.kicad_sym")(options "")(descr ""))
+  (lib (name "evqp7c01p")(type "KiCad")(uri "${KIPRJMOD}/libraries/evqp7c01p/2023-07-27_20-48-27.kicad_sym")(options "")(descr ""))
+)
