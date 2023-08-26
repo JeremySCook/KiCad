@@ -1,3 +1,4 @@
+print("Hello World!")
 import board
 import digitalio
 import time
