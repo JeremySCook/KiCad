@@ -1,0 +1,186 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Isolator:PC817 U1
+U 1 1 5FD19666
+P 5000 2900
+F 0 "U1" H 5000 3225 50  0000 C CNN
+F 1 "PC817" H 5000 3134 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 4800 2700 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5000 2900 50  0001 L CNN
+	1    5000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack3 J3
+U 1 1 5FD1A807
+P 5850 3000
+F 0 "J3" V 5786 3188 50  0000 L CNN
+F 1 "AudioJack3" V 5877 3188 50  0000 L CNN
+F 2 "Connector_Audio:2.5mm_jack" H 5850 3000 50  0001 C CNN
+F 3 "~" H 5850 3000 50  0001 C CNN
+	1    5850 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 3200 5450 3200
+Wire Wire Line
+	5450 3200 5450 2800
+Wire Wire Line
+	5450 2800 5300 2800
+Wire Wire Line
+	5300 3000 5300 3300
+Wire Wire Line
+	5300 3300 5950 3300
+Wire Wire Line
+	5950 3300 5950 3200
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5FD1C3FB
+P 3850 2850
+F 0 "J1" H 4000 3300 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 4000 3200 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3850 2850 50  0001 C CNN
+F 3 "~" H 3850 2850 50  0001 C CNN
+	1    3850 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2950 4400 2950
+Wire Wire Line
+	4400 2950 4400 3000
+Wire Wire Line
+	4400 3000 4700 3000
+Wire Wire Line
+	4700 2850 4700 2800
+Wire Wire Line
+	4700 3000 4700 3950
+Wire Wire Line
+	4700 4050 5750 4050
+Connection ~ 4700 3000
+Wire Wire Line
+	5000 3600 4800 3600
+Wire Wire Line
+	4550 2750 4050 2750
+$Comp
+L Device:R R160
+U 1 1 5FD1E309
+P 4350 2850
+F 0 "R160" V 4143 2850 50  0000 C CNN
+F 1 "R" V 4234 2850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4280 2850 50  0001 C CNN
+F 3 "~" H 4350 2850 50  0001 C CNN
+	1    4350 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 2850 4050 2850
+Wire Wire Line
+	4500 2850 4700 2850
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5FD1F27D
+P 4150 3850
+F 0 "J2" H 4250 4100 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 4250 4000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4150 3850 50  0001 C CNN
+F 3 "~" H 4150 3850 50  0001 C CNN
+	1    4150 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3850 4800 3850
+Wire Wire Line
+	4800 3850 4800 3600
+Connection ~ 4800 3600
+Wire Wire Line
+	4350 3950 4700 3950
+Connection ~ 4700 3950
+Wire Wire Line
+	4700 3950 4700 4050
+Text Notes 3410 2955 0    50   ~ 0
+TO PIR\n1 = +VDC\n2 = SIG\n3 = -VDC
+Text Notes 3450 4150 0    50   ~ 0
+1 = AUX +VDC\n2 = AUX -DC
+NoConn ~ 5850 3200
+$Comp
+L power:VCC #PWR0101
+U 1 1 5FD252AF
+P 5000 3600
+F 0 "#PWR0101" H 5000 3450 50  0001 C CNN
+F 1 "VCC" H 5015 3773 50  0000 C CNN
+F 2 "" H 5000 3600 50  0001 C CNN
+F 3 "" H 5000 3600 50  0001 C CNN
+	1    5000 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 3600
+$Comp
+L power:GND #PWR0102
+U 1 1 5FD26276
+P 5750 4050
+F 0 "#PWR0102" H 5750 3800 50  0001 C CNN
+F 1 "GND" H 5755 3877 50  0000 C CNN
+F 2 "" H 5750 4050 50  0001 C CNN
+F 3 "" H 5750 4050 50  0001 C CNN
+	1    5750 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 4050
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FD26522
+P 5750 4050
+F 0 "#FLG0101" H 5750 4125 50  0001 C CNN
+F 1 "PWR_FLAG" V 5750 4178 50  0000 L CNN
+F 2 "" H 5750 4050 50  0001 C CNN
+F 3 "~" H 5750 4050 50  0001 C CNN
+	1    5750 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FD26FCD
+P 5000 3600
+F 0 "#FLG0102" H 5000 3675 50  0001 C CNN
+F 1 "PWR_FLAG" V 5000 3728 50  0000 L CNN
+F 2 "" H 5000 3600 50  0001 C CNN
+F 3 "~" H 5000 3600 50  0001 C CNN
+	1    5000 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 2750 4550 3280
+$Comp
+L Switch:SW_DIP_x01 SW1
+U 1 1 5FEADD20
+P 4250 3280
+F 0 "SW1" H 4250 3547 50  0000 C CNN
+F 1 "SW_DIP_x01" H 4250 3456 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm" H 4250 3280 50  0001 C CNN
+F 3 "~" H 4250 3280 50  0001 C CNN
+	1    4250 3280
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3600 4350 3440
+Wire Wire Line
+	4350 3440 3950 3440
+Wire Wire Line
+	3950 3440 3950 3280
+Wire Wire Line
+	4350 3600 4800 3600
+$EndSCHEMATC
